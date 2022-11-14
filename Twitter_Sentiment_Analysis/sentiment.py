@@ -1,10 +1,10 @@
-import tweepy
+import tweepy, config
 from textblob import TextBlob
 
-consumer_key = 'PTO3c8rxWw7WhN3EKt0pM8VzH'
-consumer_secret = '496dLVPVOpGmPh7pLAKG4pGf7R2yHZPTFMZn2Zjt6DPFSbjqG5'
-access_token = '1096434375883919367-Mzo5ox0bJellGNqqE7FmSvT6sGfUAf'
-access_secret = 'EJSb9oMb4x35Et75klLIflo2n9H30RwRZTthMD6LuUKNh'
+consumer_key = config.api_key
+consumer_secret = config.api_secret
+access_token = config.access_token
+access_secret = config.token_secret
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 
